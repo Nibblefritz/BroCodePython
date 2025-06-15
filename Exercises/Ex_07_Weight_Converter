@@ -1,0 +1,14 @@
+# Weight Converter Program
+
+weight = float(input("Enter your wieght: "))
+unit = input("Enter the unit (kg/lb): ").strip().lower()
+if unit == "kg":
+    weight = weight * 2.20462
+elif unit == "lb":
+    weight = weight / 2.20462
+else:
+    print("Invalid unit. Please enter 'kg' or 'lb'.")
+    exit()
+
+# See we use a conditional expression within the print function
+print(f"Your weight in {'lb' if unit == 'kg' else 'kg'}(s) is: {weight:.2f}")
