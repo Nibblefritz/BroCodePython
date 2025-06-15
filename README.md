@@ -1,2 +1,2 @@
 # BroCodePython
-Video status: 1:05:59
+Video status: 1:27:03
