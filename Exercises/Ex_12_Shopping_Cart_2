@@ -1,0 +1,29 @@
+# Shopping Cart Program
+# 2 lists for foods and prices
+
+foods =[]
+prices = []
+total = 0.0
+
+
+while True:
+    food = input("Enter a food to buy (q to quit): ")
+    if food.lower() == 'q':
+        break
+    else:
+        foods.append(food)
+        price = float(input(f"Enter the price of a {food}: $"))
+        prices.append(price)
+        
+print("")
+print("-----Your Shopping Cart-----")
+for i in range(len(foods)):
+    print(f"{foods[i]:>20} - ${prices[i]:.2f}")
+    
+print("---------------------------")
+
+for price in prices:
+    total += price
+    
+print("")
+print(f"Your total is: ${total:.2f}")
